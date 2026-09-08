@@ -2,11 +2,11 @@
     --rose-800: hsl(332, 51%, 32%);
     --rose-50: hsl(330, 100%, 98%);
     --white: hsl(0, 0%, 100%);
-    --Stone-100: hsl(30, 54%, 90%);
-    --Stone-150: hsl(30, 18%, 87%);
-    --Stone-600: hsl(30, 10%, 34%);
-    --Stone-900: hsl(24, 5%, 18%);
-    --Brown-800: hsl(14, 45%, 36%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
     --font-heading: "Young Serif", serif;
     --font-body: "Outfit", sans-serif;
 
@@ -34,7 +34,7 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    background-color: var(--Stone-100);
+    background-color: var(--stone-100);
     min-height: 100vh;
     padding: 128px 48px;
 
@@ -56,6 +56,7 @@ body {
     height: 300px;
     object-fit: cover;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .text-content{
@@ -65,13 +66,13 @@ body {
 }
 
 h1{
-    color: var(--Stone-900);
+    color: var(--stone-900);
     font-family: var(--font-heading);
     font-weight: var(--fw-regular);
 }
 
 p{
-    color: var(--Stone-600);
+    color: var(--stone-600);
 }
 
 .title{
@@ -88,13 +89,20 @@ p{
     background-color: var(--rose-50) ;
     border-radius: 12px;
 }
-
+ 
 .prep h2{
     color: var(--rose-800);
 }
 
+.prep li::marker{
+    color: var(--rose-800);
+}
+
+li {
+    color: var(--stone-600);
+}
 h2{
-    color: var(--Brown-800);
+    color: var(--brown-800);
 }
 .ingredients{
     display: flex;
@@ -114,24 +122,43 @@ h2{
     gap: 24px;
 }
 
+
 th, td{
-    border-bottom: 1px solid var(--Stone-150) ;
+    border-bottom: 1px solid var(--stone-150) ;
+    padding: 12px 32px;
 
 }
-
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+th{
+    font-weight: var(--fw-regular);
+    color: var(--stone-600)
 }
-ol{
+
+td{
+    font-weight: var(--fw-semibold);
+    color: var(--brown-800);
+}
+
+ ul, ol{
    display: flex;
     flex-direction: column;
     gap: 16px; 
+    padding-left: 8px;
+}
+
+li{
+    padding-left: 16px;
+}
+
+ol li::marker{
+    font-weight: var(--fw-semibold);
+}
+
+li::marker{
+    color: var(--brown-800);
 }
 
 hr.solid{
-    border-top: 1px solid var(--Stone-150);
+    border-top: 1px solid var(--stone-150);
 }
 
 strong{
