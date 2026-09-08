@@ -167,3 +167,13 @@ strong{
 
 .attribution { font-size: 0.6875rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    .recipe-card {
+        padding: 24px;
+    }
+}
