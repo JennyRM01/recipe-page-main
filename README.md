@@ -15,8 +15,8 @@ This is a recipe card built from a Frontend Mentor challenge, with instructions 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/recipe-page-solution-using-html-and-css-tYPPszOR6X)
-- Live Site URL: [Add live site URL here](https://jennyrm01.github.io/recipe-page-main/)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/recipe-page-solution-using-html-and-css-tYPPszOR6X)
+- Live Site URL: [Solution live site](https://jennyrm01.github.io/recipe-page-main/)
 
 ## My process
 
